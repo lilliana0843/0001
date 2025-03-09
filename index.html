@@ -38,13 +38,15 @@
 </head>
 <body>
 
- <div id="timer">
-   
-    <div class="days">
-       <p id="startText">審神者就任日</p>
-      <div id="days" class="numbers"> </div>days
-    </div>
+<div id="timer">
+  <!-- 顯示標題的段落，現在也會顯示在框框內 -->
+  <p id="startText">審神者就任日</p>
+
+  <!-- 顯示天數的區塊 -->
+  <div class="days">
+    <div id="days" class="numbers"> </div>days
   </div>
+</div>
 </body>
 <script>
 let startTime = new Date(2015, 2, 10).getTime();
