@@ -6,47 +6,54 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900">
   <title>Document</title>
   <style>
-#timer {
-  color: #591818;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-size: .7em;
-  letter-spacing: 5px;
-}
-.days {
-  display: inline-block;
-  padding: 30px;
-  width: 180px;
-  border-radius: 5px;
-}
-.days { background: #D7C1C1; }
-.numbers {
-  font-family: 'Montserrat', sans-serif;
-  color: #D06767;
-  font-size: 4em;
-  text-align: center;
-}
-.startText {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 6em;  /* 將字體大小設為 6em */
-  color: #D06767;
-  letter-spacing: 5px;
-  text-align: center;
-}
+    #timer {
+      color: #591818;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Lato', sans-serif;
+      font-size: .7em;
+      letter-spacing: 5px;
+      width: 300px; /* 設定容器的寬度 */
+      margin: 0 auto; /* 讓框框居中 */
+      border: 2px solid #D06767; /* 邊框顏色 */
+      border-radius: 10px; /* 邊角圓滑 */
+      padding: 20px;
+      background-color: #f8f1f1;
+    }
+
+    .days {
+      display: inline-block;
+      padding: 20px;
+      width: 180px;
+      border-radius: 5px;
+      background: #D7C1C1;
+      margin-top: 10px;
+    }
+
+    .numbers, .startText {
+      font-family: 'Montserrat', sans-serif;
+      color: #D06767;
+      font-size: 4em; /* 統一字體大小 */
+      text-align: center;
+    }
+
+    .startText {
+      margin-bottom: 10px; /* 標題與日期之間的間距 */
+    }
   </style>
 </head>
 <body>
 
 <div id="timer">
   <!-- 顯示標題的段落，現在也會顯示在框框內 -->
-  <p id="startText">審神者就任日</p>
+  <p class="startText">審神者就任日</p>
 
   <!-- 顯示天數的區塊 -->
   <div class="days">
     <div id="days" class="numbers"> </div>days
   </div>
 </div>
+
 </body>
 <script>
 let startTime = new Date(2015, 2, 10).getTime();
@@ -63,8 +70,3 @@ let timer = setInterval(function() {
 
 </script>
 </html>
-
-
-
-
-
