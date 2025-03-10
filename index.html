@@ -4,9 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 引入 Google Fonts，使用 Sawarabi Mincho 字體 -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho">
+   <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
   <title>審神者就任日計時器</title>
   <style>
+    /* 計時器的外框樣式 */
+    #timer {
+      color: #591818; /* 文字顏色 */
+      text-align: center; /* 讓內容置中 */
+      text-transform: uppercase; /* 文字轉大寫 */
+      font-family: 'Sawarabi Mincho', serif; /* 日本風格字體 */
+      font-size: .7em; /* 縮小字體 */
+      letter-spacing: 5px; /* 增加字母間距 */
+      width: 300px; /* 設定計時器容器的寬度 */
+      margin: 0 auto; /* 讓計時器置中 */
+      border-radius: 10px; /* 讓外框邊角圓滑 */
+      padding: 20px; /* 內部間距 */
+    }
 
     /* 內部區塊 .days 的樣式 */
     .days {
@@ -20,7 +33,7 @@
 
     /* 設定顯示數字的樣式 */
     .numbers {
-      font-family: 'Yuji Boku', serif; /* 使用相同的字體 */
+      font-family: 'Sawarabi Mincho', serif; /* 使用相同的字體 */
       color: #D06767; /* 設定顏色 */
       font-size: 4em; /* 放大數字 */
       text-align: center; /* 讓文字置中 */
@@ -28,7 +41,7 @@
 
     /* 設定標題的樣式 */
     .startText {
-      font-family: 'Yuji Boku', serif; /* 使用相同的字體 */
+      font-family: 'Sawarabi Mincho', serif; /* 使用相同的字體 */
       font-size: 2em; /* 調整字體大小 */
       color: #591818; /* 設定顏色 */
       text-align: center; /* 讓文字置中 */
@@ -39,8 +52,8 @@
 </head>
 <body>
 
-
-
+<!-- 計時器外框 -->
+<div id="timer">
   <!-- 內部區塊 .days，包含標題與天數 -->
   <div class="days">
     <p class="startText">審神者就任日</p> <!-- 標題文字 -->
@@ -48,7 +61,7 @@
     <!-- 顯示天數的數字 -->
     <div id="days" class="numbers"></div>days
   </div>
-
+</div>
 
 </body>
 <script>
