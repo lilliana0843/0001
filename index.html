@@ -7,19 +7,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho">
   <title>審神者就任日計時器</title>
   <style>
-    /* 計時器的外框樣式 */
-    #timer {
-      color: #591818; /* 文字顏色 */
-      text-align: center; /* 讓內容置中 */
-      text-transform: uppercase; /* 文字轉大寫 */
-      font-family: 'Yuji Boku', serif; /* 日本風格字體 */
-      font-size: .7em; /* 縮小字體 */
-      letter-spacing: 5px; /* 增加字母間距 */
-      width: 300px; /* 設定計時器容器的寬度 */
-      margin: 0 auto; /* 讓計時器置中 */
-      border-radius: 10px; /* 讓外框邊角圓滑 */
-      padding: 20px; /* 內部間距 */
-    }
 
     /* 內部區塊 .days 的樣式 */
     .days {
@@ -52,8 +39,8 @@
 </head>
 <body>
 
-<!-- 計時器外框 -->
-<div id="timer">
+
+
   <!-- 內部區塊 .days，包含標題與天數 -->
   <div class="days">
     <p class="startText">審神者就任日</p> <!-- 標題文字 -->
@@ -61,7 +48,7 @@
     <!-- 顯示天數的數字 -->
     <div id="days" class="numbers"></div>days
   </div>
-</div>
+
 
 </body>
 <script>
