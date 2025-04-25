@@ -36,7 +36,17 @@
       font-size: 2.8em; /* 放大數字 */
       text-align: center; /* 讓文字置中 */
     }
-
+.days-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px; /* 數字與文字間距 */
+}
+    .label {
+  font-size: 2.1em;
+  color: #c74444;
+  font-family: 'Yuji Boku', serif;
+}
     /* 設定標題的樣式 */
     .startText {
       font-family: 'Yuji Boku', serif; /* 使用相同的字體 */
@@ -57,7 +67,9 @@
     <p class="startText">審神者就任日</p> <!-- 標題文字 -->
 
     <!-- 顯示天數的數字 -->
-    <div id="days" class="numbers"></div>日
+     <div class="days-inline">
+    <span id="days" class="numbers"></span><span class="label">日</span>
+        </div>
   </div>
 </div>
 
