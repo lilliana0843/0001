@@ -23,11 +23,14 @@
     /* 內部區塊 .days 的樣式 */
     .days {
       display: inline-block; /* 讓元素變成內聯區塊 */
-      padding: 7px; /* 內距 */
+      padding: 10px 7px 10px 7px; /* 內距 */
       width: 175px; /* 設定區塊寬度 */
       border-radius: 3.5px; /* 讓區塊邊角圓滑 */
       background: #ededed; /* 設定背景顏色 */
       border: 2px solid #c74444;
+       flex-direction: column;      /* 垂直排列內容 */
+  justify-content: center;     /* 垂直置中 */
+  align-items: center;         /* 水平置中（其實你已經有 text-align 也可以） */
     }
 
     /* 設定顯示數字的樣式 */
@@ -41,7 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2px; /* 數字與文字間距 */
+  gap: 1.5px; /* 數字與文字間距 */
+   line-height: 1.5;
 }
     .label {
   font-size: 2.1em;
@@ -56,6 +60,7 @@
       text-align: center; /* 讓文字置中 */
       margin-top: 7px; /* 上邊距 10px */
       margin-bottom: 3.5px; /* 下邊距 10px */
+       line-height: 1;
     }
   </style>
 </head>
